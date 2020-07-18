@@ -7,20 +7,44 @@
 
     <link rel="stylesheet" type="text/css" href="./main.css">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    	
+	  $(document).ready(function() {
+		$(this).scrollTop(0);
+	  	$(window).scroll( function() {
+	  		var offset = $(this).scrollTop();
+            var fadeUntil = 300;
+
+            if( offset <= 0 ){
+                opacity=1;
+            }
+            else if( offset <= fadeUntil ){
+                opacity = 1 - offset/fadeUntil;
+            }
+
+            $("#landing-text-box h1").css('opacity',opacity);
+            $("#landing-text-box h2").css('opacity',opacity);
+
+            if (offset >= parseInt($("#landing-page").css("height"))*0.5){
+            	$("#landing-text-box h1").css('display', 'none');
+            	$("#landing-text-box h2").css('display', 'none');
+            }
+            else{
+                $("#landing-text-box h1").css('display', 'block');
+            	$("#landing-text-box h2").css('display', 'block');
+            }
+	  	});
+	  });
+	 </script>
 
     <title>Prakrit Baruah</title>
   </head>
   
   <body class="bgcolor">
-  <script>
- 	$("window").scroll(function(){
-	  $("#landing-text-box h1").opacity(0);
-	});
-  </script>
 
   	<nav>
-		<img id="logo" src="signature-overlay-1.png">
+		<img id="logo" src="signature.png">
 		<div id="navbar-links-box">
 			<a href="#" id="navbar-link-text" class="text semi-emphasise">contact</a>
 			<a href="#" id="navbar-link-text" class="text semi-emphasise">experience</a>
@@ -70,7 +94,7 @@
 				<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
 			</div>
 		</div>
-
+	
 		<div class="experience-text-box">
 			<h1 class="text emphasise">Education</h1>
 			<div class="experience-content">
@@ -87,9 +111,11 @@
 		<div id="landing-links-box">
 			<ul class="text">
 				<li><a href="#">email</a></li>
-				<li><p>&#183;</p></li>
+				<!-- <li><p>&#183;</p></li> -->
+				<li><p>*</p></li>
 				<li><a href="#">linkedin</a></li>
-				<li><p>&#183;</p></li>
+				<!-- <li><p>&#183;</p></li> -->
+				<li><p>*</p></li>
 				<li><a href="#">resume</a></li>
 			</ul>
 		</div>
