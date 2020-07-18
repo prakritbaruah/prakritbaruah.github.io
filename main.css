@@ -1,0 +1,353 @@
+
+
+* {
+	/*border: 1px solid red !important;*/
+	margin:0;
+	padding: 0;
+}
+
+body, html {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+/* Mobile phone */
+.bgcolor {
+	background-color: rgb(238,226,220);
+}
+
+#navbar-links-box .semi-emphasise {
+	font-weight: 500;
+}
+
+.page .emphasise {
+	font-weight: 700;
+}
+
+.page .semi-emphasise {
+	font-weight: 500;
+}
+
+.italicise {
+	font-style: italic;
+}
+
+.text {
+	font-family: 'Lora', serif;
+	font-weight: 400;
+}
+
+nav {
+	position: fixed;
+	text-align: center;
+	height: 60px;
+	width: 100%;
+	z-index: 1;
+	padding-top: 10px;
+}
+
+#landing-page {
+	min-height: 100%;
+	height: 100vh;
+	width: 100%;
+}
+
+#experience-page {
+	height: auto;
+	width: 100%;
+	padding-top: 40px;
+	margin-bottom: 100px;
+}
+
+#navbar-links-box {
+	height: auto;
+	width: auto;
+	margin-right: 30px;
+	margin-top: 10px;
+	
+}
+
+#navbar-link-text {
+	text-decoration: none;
+	color: rgb(26,26,29);
+	display: none;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#navbar-link-text:hover{
+	color: rgb(64, 86, 161);
+}
+
+#logo {
+	width: auto; 
+	height: 100%;
+	margin-left: 10px;
+}
+
+#landing-text-box {
+	position: relative;
+	height: auto;
+	width: 80%;
+	left: 10%;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);	
+}
+
+#landing-text-box h1 {
+	color: rgb(64, 86, 161);
+	font-size: 40px;
+}
+
+#landing-text-box h2 {
+	color: rgb(64, 86, 161);
+	font-size: 18px;
+}
+
+.experience-text-box {
+	position: relative;
+	height: auto;
+	width: 80%;
+	left: 10%;
+	margin-bottom: 40px;
+}
+
+.experience-content {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.experience-text-box h1 {
+	font-size: 25px;
+	color: rgb(26,26,29);
+}
+
+.experience-text-box h3 {
+	font-size: 18px;
+}
+
+#experience-time {
+	color: rgb(109, 109, 122);
+}
+
+.experience-text-box p {
+	font-size: 15px;
+	color: rgb(26,26,29);;
+}
+
+
+footer {
+	background-color: rgb(220, 197, 186);
+	height: 100px;
+	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+	list-style-type: none;
+}
+
+footer #copyright{
+	margin-top: 30px;
+	margin-bottom: 10px;
+	font-size: 15px;
+}
+
+footer li {
+	display: inline-block;
+}
+
+footer #landing-links-box a,p{
+	font-weight: 700;
+	color: rgb(109, 109, 122);
+	text-decoration: none;
+	font-size: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+footer #landing-links-box a:hover {
+	color: rgb(64, 86, 161);
+}
+
+/* tiny phone */
+@media only screen and (max-width: 330px) {
+	nav {
+		height: 50px;
+	}
+	#landing-text-box h1 {
+		font-size: 35px;
+	}
+	#landing-text-box h2 {
+		font-size: 17px;
+	}
+	.experience-text-box h1 {
+		font-size: 20px;
+	}
+	.experience-text-box h3 {
+		font-size: 16px;
+	}
+	.experience-text-box p {
+		font-size: 14px;
+	}
+	footer #landing-links-box {
+		font-size: 17px;
+	}
+}
+
+
+/* medium phone */
+@media only screen and (min-width: 400px) {
+	#landing-text-box h1 {
+		font-size: 45px;
+	}
+	#landing-text-box h2 {
+		font-size: 20px;
+	}
+}
+	
+
+/* small tablet */
+@media only screen and (min-width: 767px) {
+	nav {
+		padding-top: 20px;
+	}
+	#navbar-link-text {
+		float: right;
+		display: inline-block; 
+		font-size: 18px;
+	}
+	#logo{
+		float: left;
+		margin-left: 30px;
+	}
+	#landing-text-box {
+		width: 60%;
+		left: 20%;
+	}
+	.experience-text-box{
+		width: 60%;
+		left: 20%;
+	}
+	#landing-text-box h1 {
+		font-size: 45px;
+	}
+	#landing-text-box h2 {
+		font-size: 22px;
+	}
+	.experience-text-box h1 {
+		font-size: 26px;
+	}
+	.experience-text-box h3 {
+		font-size: 18px;
+	}
+	.experience-text-box p {
+		font-size: 15px;
+	}
+}
+
+
+/* Large Tablet & Small Desktop */
+@media only screen and (min-width: 992px) {
+	#landing-text-box {
+		width: 60%;
+		left: 20%;
+	}
+	.experience-text-box{
+		width: 60%;
+		left: 20%;
+	}
+	.experience-content{
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	#landing-text-box h1 {
+		font-size: 50px;
+	}
+	#landing-text-box h2 {
+		font-size: 24px;
+	}
+	.experience-text-box h1 {
+		font-size: 30px;
+	}
+	.experience-text-box h3 {
+		font-size: 18px;
+	}
+	.experience-text-box p {
+		font-size: 15px;
+	}
+	footer #landing-links-box a,p {
+		font-size: 22px;
+	}
+}
+
+
+/* Desktops (13') */
+@media only screen and (min-width: 1200px) {
+
+}
+
+/* Medium Desktops */
+@media only screen and (min-width: 1350px) {
+	#navbar-link-text {
+		margin-left: 30px;
+		margin-right: 30px;
+		font-size: 20px;
+	}
+	#landing-text-box h1 {
+		font-size: 60px;
+	}
+	#landing-text-box h2 {
+		font-size: 26px;
+	}
+	.experience-text-box h1 {
+		font-size: 30px;
+	}
+	.experience-text-box h3 {
+		font-size: 20px;
+	}
+	.experience-text-box p {
+		font-size: 18px;
+	}
+
+}
+
+/* Large Desktops */
+@media only screen and (min-width: 1900px) {
+	nav {
+		padding-top: 30px;
+	}
+	#logo{
+		margin-left: 40px;
+		height: 80px;
+	}
+	#navbar-link-text {
+		margin-left: 50px;
+		margin-right: 50px;
+		margin-top: 10px;
+		font-size: 25px;
+	}
+	#landing-text-box h1 {
+		font-size: 80px;
+	}
+	#landing-text-box h2 {
+		font-size: 34px;
+	}
+	.experience-text-box h1 {
+		font-size: 40px;
+	}
+	.experience-text-box h3 {
+		font-size: 26px;
+	}
+	.experience-text-box p {
+		font-size: 22px;
+	}
+}
+
+
+
+
