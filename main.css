@@ -11,14 +11,16 @@ body, html {
 	height: 100%;
 }
 
-/* Mobile phone */
-.bgcolor {
-	/*background-color: rgb(238,226,220);*/
-	background-color: white;
+html {
+	scroll-behavior:smooth
 }
 
-#navbar-links-box .semi-emphasise {
-	font-weight: 500;
+
+/* Mobile phone */
+
+.text {
+	font-family: 'Lora', serif;
+	font-weight: 400
 }
 
 .page .emphasise {
@@ -33,11 +35,6 @@ body, html {
 	font-style: italic;
 }
 
-.text {
-	font-family: 'Lora', serif;
-	font-weight: 400
-}
-
 nav {
 	position: fixed;
 	background-color: rgba(255,255,255,0.75);
@@ -48,20 +45,7 @@ nav {
 	padding-top: 10px;
 }
 
-#landing-page {
-	min-height: 100%;
-	height: 100vh;
-	width: 100%;
-}
-
-#experience-page {
-	height: auto;
-	width: 100%;
-	padding-top: 40px;
-	margin-bottom: 60px;
-}
-
-#navbar-links-box {
+nav #navbar-links-box {
 	height: auto;
 	width: auto;
 	margin-right: 30px;
@@ -69,7 +53,7 @@ nav {
 	
 }
 
-#navbar-link-text {
+nav .navbar-link {
 	text-decoration: none;
 	color: rgb(26,26,29);
 	display: none;
@@ -77,14 +61,24 @@ nav {
 	margin-right: 20px;
 }
 
-#navbar-link-text:hover{
-	color: rgb(64, 86, 161);
+nav #navbar-links-box .semi-emphasise {
+	font-weight: 500;
 }
 
-#logo {
+nav .navbar-link:hover{
+	color: rgb(109, 109, 122);
+}
+
+nav #logo {
 	width: auto; 
 	height: 100%;
 	margin-left: 10px;
+}
+
+#landing-page {
+	min-height: 100%;
+	height: 100vh;
+	width: 100%;
 }
 
 #landing-text-box {
@@ -116,6 +110,13 @@ nav {
 	font-size: 18px;
 }
 
+#experience-page {
+	height: auto;
+	width: 100%;
+	padding-top: 40px;
+	margin-bottom: 60px;
+}
+
 .experience-text-box {
 	position: relative;
 	height: auto;
@@ -138,7 +139,7 @@ nav {
 	font-size: 18px;
 }
 
-#experience-time {
+.experience-text-box .experience-time {
 	color: rgb(109, 109, 122);
 }
 
@@ -149,8 +150,6 @@ nav {
 
 
 footer {
-	/*background-color: rgb(220, 197, 186);*/
-	background-color: white;
 	height: 80px;
 	width: 100%;
 	padding-top: 30px;
@@ -169,7 +168,7 @@ footer li {
 	display: inline-block;
 }
 
-footer #landing-links-box a,p{
+footer #footer-links-box a,p{
 	font-weight: 500;
 	color: black;
 	text-decoration: none;
@@ -178,8 +177,8 @@ footer #landing-links-box a,p{
 	margin-right: 5px;
 }
 
-footer #landing-links-box a:hover {
-	color: rgb(64, 86, 161);
+footer #footer-links-box a:hover {
+	color: rgb(109, 109, 122);
 }
 
 /* tiny phone */
@@ -202,7 +201,7 @@ footer #landing-links-box a:hover {
 	.experience-text-box p {
 		font-size: 14px;
 	}
-	footer #landing-links-box {
+	footer #footer-links-box {
 		font-size: 16px;
 	}
 }
@@ -224,12 +223,12 @@ footer #landing-links-box a:hover {
 	nav {
 		padding-top: 20px;
 	}
-	#navbar-link-text {
+	nav .navbar-link {
 		float: right;
 		display: inline-block; 
 		font-size: 18px;
 	}
-	#logo{
+	nav #logo{
 		float: left;
 		margin-left: 30px;
 	}
@@ -265,6 +264,12 @@ footer #landing-links-box a:hover {
 		width: 60%;
 		left: 20%;
 	}
+	#landing-text-box h1 {
+		font-size: 50px;
+	}
+	#landing-text-box h2 {
+		font-size: 24px;
+	}
 	.experience-text-box{
 		width: 60%;
 		left: 20%;
@@ -272,12 +277,6 @@ footer #landing-links-box a:hover {
 	.experience-content{
 		margin-top: 30px;
 		margin-bottom: 30px;
-	}
-	#landing-text-box h1 {
-		font-size: 50px;
-	}
-	#landing-text-box h2 {
-		font-size: 24px;
 	}
 	.experience-text-box h1 {
 		font-size: 30px;
@@ -288,7 +287,7 @@ footer #landing-links-box a:hover {
 	.experience-text-box p {
 		font-size: 15px;
 	}
-	footer #landing-links-box a,p {
+	footer #footer-links-box a,p {
 		font-size: 20px;
 	}
 }
@@ -301,7 +300,7 @@ footer #landing-links-box a:hover {
 
 /* Medium Desktops */
 @media only screen and (min-width: 1350px) {
-	#navbar-link-text {
+	nav #navbar-link {
 		margin-left: 30px;
 		margin-right: 30px;
 		font-size: 20px;
@@ -329,11 +328,11 @@ footer #landing-links-box a:hover {
 	nav {
 		padding-top: 30px;
 	}
-	#logo{
+	nav #logo{
 		margin-left: 40px;
 		height: 80px;
 	}
-	#navbar-link-text {
+	nav .navbar-link {
 		margin-left: 50px;
 		margin-right: 50px;
 		margin-top: 10px;
