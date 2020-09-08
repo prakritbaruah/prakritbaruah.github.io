@@ -16,40 +16,6 @@
 
 
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-
-		<script type="text/javascript">
-
-		$(document).ready(function() {
-			$(this).scrollTop(0);
-			changeOpacity();
-			$(window).scroll(changeOpacity);
-
-		});
-
-		function changeOpacity() {
-				var offset = $(this).scrollTop();
-				var fadeUntil = 300;
-
-				if( offset <= 0 ){
-					opacity=1;
-				}
-				else if( offset <= fadeUntil ){
-					opacity = 1 - offset/fadeUntil;
-				}
-
-				$("#landing-content").css('opacity',opacity);
-
-
-				if (offset >= parseInt($("#landing-page").css("height"))*0.5){
-					$("#landing-content h1").css('display', 'none');
-					$("#landing-content h3").css('display', 'none');
-				}
-				else{
-					$("#landing-content h1").css('display', 'block');
-					$("#landing-content h3").css('display', 'block');
-				}
-		}
-		</script>
 	</head>
 
 	<body  class="background-color">
@@ -75,10 +41,10 @@
 			<div id="collapsible-navbar" class="collapse navbar-collapse justify-content-end mr-4 mt-3">
 				<ul class="navbar-nav align-items-center">
 					<li class="nav-item mx-4">
-						<a class="nav-link" href="#landing-page">about</a>
+						<a class="nav-link" href="index.html#landing-page">about</a>
 					</li>
 					<li class="nav-item mx-4">
-						<a class="nav-link" href="#experience-page">experience</a>
+						<a class="nav-link" href="index.html#experience-page">experience</a>
 					</li>
 					<li class="nav-item mx-4">
 						<a class="nav-link" href="visualisations.html">visualisations</a>
@@ -91,25 +57,10 @@
 		</nav>
 
 
-		<!-- Landing Page -->
-		<div id="landing-page" class="row align-items-center justify-content-center">
-			<div id="landing-content" class= "my-auto mx-auto">
-				<h1 class="header-text">Hello, I'm <span class="highlight-text">Prakrit</span>.</h1>
-				<h3 class="header-text">
-					i am a recent <span class="highlight-text">graduate</span> from brown university
-					<span class="highlight-text">*</span> 
-					i work on product <span class="highlight-text">data science</span> for the <span class="highlight-text">machine learning</span> team at flatiron health
-					<span class="highlight-text">*</span>
-					i want to use data to solve complex, real world issues.
-				</h3>
-			</div>
-		</div>
-
-
 		<!-- Experience Page -->
-		<div id="experience-page" class="pt-5">
+		<div id="visualisations-page" class="pt-5">
 			<div id="experience-content" class="mx-auto">
-				<h2 class="header-text my-5">Experience</h2>
+				<h2 class="header-text my-5">Visualisations</h2>
 
 				<div class="body-text my-4">
 					<h4 class="experience-time-text my-1">Summer 2019</h4>
@@ -127,33 +78,6 @@
 					<h4 class="experience-time-text my-1">Summer 2019</h4>
 					<h4 class="experience-job-text my-1"><span>Company Name</span> Job Title</h4>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				</div>
-
-				<div class="body-text my-4">
-					<h4 class="experience-time-text my-1">Summer 2019</h4>
-					<h4 class="experience-job-text my-1"><span>Company Name</span> Job Title</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				</div>
-
-				<div class="body-text my-4">
-					<h4 class="experience-time-text my-1">Summer 2019</h4>
-					<h4 class="experience-job-text my-1"><span>Company Name</span> Job Title</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				</div>
-
-			</div>
-		</div>
-
-
-		<!-- Education -->
-		<div id="experience-page">
-			<div id="experience-content" class="mx-auto">
-				<h2 class="header-text my-5">Education</h2>
-
-				<div class="body-text my-5">
-					<h4 class="experience-time-text my-1">August 2016 - May 2020</h4>
-					<h4 class="experience-job-text my-1"><span>Brown University</span> B.Sc. Computer Science</h4>
-					<p>Graduated with Honours in Computer Science.</p>
 				</div>
 
 			</div>
@@ -161,7 +85,7 @@
 
 
 		<!-- Footer -->
-		<footer class="align-items-center mt-5">
+		<footer class="align-items-center min-mt-5 mt-auto">
 			<div class="row">
 				<ul class="list-inline footer-text mx-auto mt-5">
 					<li class="list-inline-item mx-3"><a href="#">email</a></li>
