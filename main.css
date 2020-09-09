@@ -1,7 +1,7 @@
 * {
 	/*border: 1px solid red !important;*/
-	margin:0;
-	padding: 0;
+	margin:0px;
+	padding: 0px;
 }
 
 body, html {
@@ -11,6 +11,8 @@ body, html {
 
 .row {
 	width: 100%;
+	margin-right: 0px;
+	margin-left: 0px;
 }
 
 html {
@@ -75,6 +77,14 @@ html {
 	width: 80%;
 }
 
+#landing-content h1{
+	font-size: 30px;
+}
+
+#landing-content h3{
+	font-size: 22px;
+}
+
 #experience-page {
 	width: 100vw;
 }
@@ -83,10 +93,21 @@ html {
 	width: 80%;
 }
 
+#experience-content h2 {
+	font-size: 25px;
+}
+
+#experience-content h4 {
+	font-size: 18px;
+}
+
+#experience-content p {
+	font-size: 15px;
+}
+
 .experience-time-text {
 	font-family: 'Lora', serif;
 	font-weight: 400;
-	font-size: 20px;
 	font-style: italic;
 	color: #444140;
 }
@@ -94,7 +115,6 @@ html {
 .experience-job-text {
 	font-family: 'Lora', serif;
 	font-weight: 400;
-	font-size: 20px;
 	color: #1E1E24;
 }
 
@@ -107,9 +127,21 @@ html {
 	width: 100vw;
 }
 
+.visualisation-title-text {
+	font-family: 'Lora', serif;
+	font-weight: 700;
+	color: #1E1E24;
+}
+
+.visualisation-title-text span {
+	font-family: 'Lora', serif;
+	font-weight: 400;
+	font-style: italic;
+	color: #444140;
+}
 
 footer {
-	height: 150px;
+	min-height: 150px;
 	width: 100vw;
 	background-color: #1E1E24;
 }
@@ -117,7 +149,7 @@ footer {
 footer .footer-text a {
 	font-family: 'Lora', serif;
 	font-weight: 700;
-	font-size: 20px;
+	font-size: 18px;
 	color: #F7EBE8;
 	text-decoration: none;
 }
@@ -150,6 +182,30 @@ footer #copyright {
 
 	#experience-content {
 		width: 50%;
+	}
+
+	#landing-content h1{
+		font-size: 50px;
+	}
+
+	#landing-content h3{
+		font-size: 28px;
+	}
+
+	#experience-content h2 {
+		font-size: 30px;
+	}
+
+	#experience-content h4 {
+		font-size: 22px;
+	}
+
+	#experience-content p {
+		font-size: 17px;
+	}
+
+	footer .footer-text p {
+		font-size: 20px;
 	}
 
 }
