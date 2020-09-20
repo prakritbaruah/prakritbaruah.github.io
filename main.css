@@ -235,6 +235,10 @@ footer #copyright {
 /* Larger devices */
 @media (min-width: 1300px) { 
 
+	#logo {
+		width: 80px;
+	}
+
 	.link-text a{
 		font-size: 20px;
 	}
