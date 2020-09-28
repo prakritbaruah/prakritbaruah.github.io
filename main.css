@@ -175,7 +175,7 @@ footer .footer-text a:hover {
 footer .footer-text p {
 	font-family: 'Lora', serif;
 	font-weight: 700;
-	font-size: 20px;
+	font-size: 18px;
 	color: #F7EBE8;
 }
 
@@ -222,7 +222,7 @@ footer #copyright {
 		font-size: 15px;
 	}
 
-	footer .footer-text p {
+	footer .footer-text a, p {
 		font-size: 15px;
 	}
 
@@ -263,7 +263,7 @@ footer #copyright {
 		font-size: 17px;
 	}
 
-	footer .footer-text p {
+	footer .footer-text a, p {
 		font-size: 20px;
 	}
 
