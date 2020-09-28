@@ -94,6 +94,7 @@ html {
 
 #experience-page {
 	background-color: #F7EBE8;
+	min-height: 100vh;
 	width: 100vw;
 }
 
@@ -141,17 +142,64 @@ html {
 	width: 100vw;
 }
 
-.visualisation-title-text {
+#visualisation-content {
+	width: 80%;
+}
+
+#visualisation-content h4 {
 	font-family: 'Lora', serif;
 	font-weight: 700;
 	color: #1E1E24;
 }
 
-.visualisation-title-text span {
+#visualisation-content h4 span {
 	font-family: 'Lora', serif;
 	font-weight: 400;
 	font-style: italic;
 	color: #444140;
+}
+
+#visualisation-content h2 {
+	font-size: 25px;
+}
+
+#visualisation-content h4 {
+	font-size: 18px;
+}
+
+#visualisation-content p {
+	font-size: 15px;
+}
+
+#visualisation-content a:hover *{
+	color: #E54B4B;
+}
+
+#visualisation-content a:hover{
+	color: #E54B4B;
+	text-decoration: none;
+}
+
+.blog-page {
+	background-color: #F7EBE8;
+	min-height: 100vh;
+	width: 100vw;
+}
+
+.blog-content {
+	width: 80%;
+}
+
+#blog-content h2 {
+	font-family: 'Lora', serif;
+	font-weight: 700;
+	font-size: 25px; 
+	/* h4 is 18px*/
+	color: #1E1E24;
+}
+
+#blog-content p {
+	font-size: 15px;
 }
 
 footer {
@@ -230,6 +278,22 @@ footer #copyright {
 		font-size: 12px;
 	}
 
+	#visualisation-content {
+		width: 50%;
+	}
+
+	#visualisation-content h2 {
+		font-size: 26px;
+	}
+
+	#visualisation-content h4 {
+		font-size: 18px;
+	}
+
+	#visualisation-content p {
+		font-size: 15px;
+	}
+
 }
 
 /* Larger devices */
@@ -260,6 +324,18 @@ footer #copyright {
 	}
 
 	#experience-content p {
+		font-size: 17px;
+	}
+
+	#visualisation-content h2 {
+		font-size: 30px;
+	}
+
+	#visualisation-content h4 {
+		font-size: 22px;
+	}
+
+	#visualisation-content p {
 		font-size: 17px;
 	}
 
