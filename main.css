@@ -45,7 +45,7 @@ html {
     box-shadow: none;
 }
 
-.link-text a{
+.link-text a {
 	font-family: 'Lora', serif;
 	font-weight: 700;
 	font-size: 18px;
@@ -194,12 +194,15 @@ html {
 	font-family: 'Lora', serif;
 	font-weight: 700;
 	font-size: 25px; 
-	/* h4 is 18px*/
 	color: #1E1E24;
 }
 
 #blog-content p {
 	font-size: 15px;
+}
+
+.plot {
+	height: 100%;
 }
 
 footer {
@@ -223,7 +226,7 @@ footer .footer-text a:hover {
 footer .footer-text p {
 	font-family: 'Lora', serif;
 	font-weight: 700;
-	font-size: 20px;
+	font-size: 18px;
 	color: #F7EBE8;
 }
 
@@ -270,14 +273,6 @@ footer #copyright {
 		font-size: 15px;
 	}
 
-	footer .footer-text p {
-		font-size: 15px;
-	}
-
-	footer #copyright {
-		font-size: 12px;
-	}
-
 	#visualisation-content {
 		width: 50%;
 	}
@@ -292,6 +287,26 @@ footer #copyright {
 
 	#visualisation-content p {
 		font-size: 15px;
+	}
+
+	.blog-content {
+		width: 50%;
+	}
+
+	#blog-content h2 {
+		font-size: 26px; 
+	}
+
+	#blog-content p {
+		font-size: 15px;
+	}
+
+	footer .footer-text a, p {
+		font-size: 15px;
+	}
+
+	footer #copyright {
+		font-size: 12px;
 	}
 
 }
@@ -339,7 +354,15 @@ footer #copyright {
 		font-size: 17px;
 	}
 
-	footer .footer-text p {
+	#blog-content h2 {
+		font-size: 30px; 
+	}
+
+	#blog-content p {
+		font-size: 17px;
+	}
+
+	footer .footer-text a, p {
 		font-size: 20px;
 	}
 
