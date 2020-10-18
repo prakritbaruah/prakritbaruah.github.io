@@ -19,6 +19,14 @@ html {
 	scroll-behavior:smooth
 }
 
+ul{
+  margin-left:20px;
+}
+
+ul ul{
+  margin-left:20px;
+}
+
 .background-color {
 	/*background-color: #F7EBE8;*/
 	background-color: #1E1E24;
@@ -190,19 +198,30 @@ html {
 	width: 80%;
 }
 
-#blog-content h2 {
+.blog-content h2 {
 	font-family: 'Lora', serif;
 	font-weight: 700;
 	font-size: 25px; 
 	color: #1E1E24;
 }
 
-#blog-content p {
-	font-size: 15px;
+.blog-content h4 {
+	font-family: 'Lora', serif;
+	font-weight: 700;
+	font-size: 18px; 
+	color: #1E1E24;
 }
 
-.plot {
-	height: 100%;
+.blog-content h4 span {
+	font-family: 'Lora', serif;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 18px; 
+	color: #444140;
+}
+
+.blog-content p, ul {
+	font-size: 15px;
 }
 
 footer {
@@ -294,10 +313,15 @@ footer #copyright {
 	}
 
 	#blog-content h2 {
-		font-size: 26px; 
+		font-size: 32px; 
 	}
 
-	#blog-content p {
+	#blog-content h4, h4 span {
+		font-size: 18px; 
+	}
+
+
+	#blog-content p, ul {
 		font-size: 15px;
 	}
 
@@ -319,7 +343,7 @@ footer #copyright {
 	}
 
 	.link-text a{
-		font-size: 20px;
+		font-size: 18px;
 	}
 
 	#landing-content h1{
@@ -354,20 +378,24 @@ footer #copyright {
 		font-size: 17px;
 	}
 
-	#blog-content h2 {
-		font-size: 30px; 
+	.blog-content h2 {
+		font-size: 40px; 
 	}
 
-	#blog-content p {
+	.blog-content h4, h4 span {
+		font-size: 22px; 
+	}
+
+	.blog-content p, ul {
 		font-size: 17px;
 	}
 
 	footer .footer-text a, p {
-		font-size: 20px;
+		font-size: 18px;
 	}
 
 	footer #copyright {
-		font-size: 15px;
+		font-size: 13px;
 	}
 
 }
