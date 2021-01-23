@@ -14,24 +14,24 @@
     	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    	<link rel="stylesheet" type="text/css" href="../main.css"/>
+    	<link rel="stylesheet" type="text/css" href="/main.css"/>
     	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
     	<script src="https://use.fontawesome.com/d11241d7ac.js"></script>
 
 		<title>Prakrit Baruah | Spring Weekend</title>
 		<meta name="description" content="A visualisation showing the most popular artists to perform at Brown University's Spring Weekend concert."> 
-		<link rel="icon" href="../favicon.png">
+		<link rel="icon" href="/favicon.png">
 
 		<!-- Insert Plots -->
 		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 		<script> 
 			$(document).ready(function(){
-				$("#plot-one").load("plots/post_2/plot_most_popular_lineups.html");
-				$("#plot-two").load("plots/post_2/plot_1968_lineup.html");
+				$("#plot-one").load("/blog/2020/plots/november_plots/plot_most_popular_lineups.html");
+				$("#plot-two").load("/blog/2020/plots/november_plots/plot_1968_lineup.html");
 			});
 
 			function loadYearlyPlotRenameButton(year) {
-				var file_path = "plots/post_2/plot_".concat(year,"_lineup.html")
+				var file_path = "/blog/2020/plots/november_plots/plot_".concat(year,"_lineup.html")
 				$("#plot-two").load(file_path); 
 				$("#plot-dropdown-button").text(year);
 			}
@@ -45,8 +45,8 @@
 		
 		<!-- Navbar -->
 		<nav class="navbar navbar-expand-md fixed-top transparent-background-color link-text">
-		 	<a class="navbar-brand ml-4 mt-3" href="../index.html#landing-page">
-				<img id="logo" src="../img/signature.svg">
+		 	<a class="navbar-brand ml-4 mt-3" href="/index.html#landing-page">
+				<img id="logo" src="/img/signature.svg">
 		 	</a>
 		  
 			<button class="navbar-toggler mt-3" type="button" data-toggle="collapse" data-target="#collapsible-navbar" aria-controls="collapsible-navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,13 +58,13 @@
 			<div id="collapsible-navbar" class="collapse navbar-collapse justify-content-end mr-4 mt-3">
 				<ul class="navbar-nav align-items-center">
 					<li class="nav-item mx-4">
-						<a class="nav-link" href="../index.html#landing-page">about</a>
+						<a class="nav-link" href="/index.html#landing-page">about</a>
 					</li>
 					<li class="nav-item mx-4">
-						<a class="nav-link" href="../index.html#experience-page">experience</a>
+						<a class="nav-link" href="/index.html#experience-page">experience</a>
 					</li>
 					<li class="nav-item mx-4">
-						<a class="nav-link" href="../visualisations.html">visualisations</a>
+						<a class="nav-link" href="/visualisations.html">visualisations</a>
 					</li>
 					<li class="nav-item mx-4">
 						<a class="nav-link" href="mailto:prakrit.baruah1@gmail.com">contact</a>
@@ -145,7 +145,7 @@
 					<li class="list-inline-item mx-md-3 mx-1"><p>*</p></li>
 					<li class="list-inline-item mx-md-3 mx-1"><a href="https://www.linkedin.com/in/prakrit-baruah-791a21104/">linkedin</a></li>
 					<li class="list-inline-item mx-md-3 mx-1"><p>*</p></li>
-					<li class="list-inline-item mx-md-3 mx-1"><a href="../index.html#landing-page">resume</a></li>
+					<li class="list-inline-item mx-md-3 mx-1"><a href="/index.html#landing-page">resume</a></li>
 				</ulmd->
 			</div>
 			<div class="row">
