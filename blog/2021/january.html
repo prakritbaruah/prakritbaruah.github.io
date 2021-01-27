@@ -9,8 +9,8 @@
 		<!-- Bootstrap CSS -->
     	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    	<!-- JQuery -->
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    	<!-- JQuery : uncompressed -->
+		<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
@@ -18,13 +18,15 @@
     	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
     	<script src="https://use.fontawesome.com/d11241d7ac.js"></script>
 
-		<title>Prakrit Baruah | Visualisations</title>
-		<meta name="description" content="Prakrit Baruah. A page linking to some of the visualisations that I have made.">
+		<title>Prakrit Baruah | Cricket World Cup</title>
+		<meta name="description" content="A visualisation showing the top bowling and batting performances over all Cricket World Cups."> 
 		<link rel="icon" href="/favicon.png">
-		
 	</head>
 
+
 	<body  class="background-color">
+
+		<script src="https://use.fontawesome.com/d11241d7ac.js"></script>
 		
 		<!-- Navbar -->
 		<nav class="navbar navbar-expand-md fixed-top transparent-background-color link-text">
@@ -56,39 +58,30 @@
 			</div>
 		</nav>
 
+		<!-- Blog Page -->
+		<div class="blog-page pt-5">
 
-		<!-- Visualisations Page -->
-		<div id="visualisations-page" class="pt-5">
-			<div id="visualisation-content" class="mx-auto">
-				<h2 class="header-text my-5">Visualisations</h2>
+			<div class="blog-content body-text mx-auto py-5">
 
-				<a href="/blog/2021/january.html" rel="author">
-					<div class="body-text my-4">
-						<h4 class="my-1">Best Cricket World Cup Performances <span>January 2021</span></h4>
-						<p>
-							The debate over cricket’s greatest players is ever enduring. A definitive answer is unattainable. However, by measuring relative performance instead of absolute runs made or wickets taken, one can at least understand the game's greatest performances.
-						</p>
-					</div>
-				</a>
+				<div class="mt-3 mb-5">
+					<h2>Best Cricket World Cup Performances</h2>
+					<h4><span>Prakrit Baruah, January 2021<span></h4>
+				</div>
 
-				<a href="/blog/2020/november.html" rel="author">
-					<div class="body-text my-4">
-						<h4 class="my-1">Most Popular Spring Weekend Artists <span>November 2020</span></h4>
-						<p>
-							Every college has traditions that students boast about and alums reminisce over. For Brown, that tradition is Spring Weekend. Every year, thousands of students pour into Brown’s Main Green to listen to incredible musicians. Naturally, I’ve wondered whether I timed my further education well. How did my Spring Weekends compare to those of past classes? Which year had the best lineup? And how famous were these artists when they came to Brown?
-						</p>
-					</div>
-				</a>
+				<p>
+				The debate over cricket’s greatest players is ever enduring. Pundits and enthusiasts alike wonder how Steve Smith or Virat Kohli would square up against Don Bradman or Sachin Tendulkar. Most dodge a definitive answer and say that players across generations shouldn’t be compared. Largely, I agree. Rules have changed, technology has evolved, and the game itself is fundamentally different now than it was fifty years ago.
+				</br></br>
+				However, this doesn’t mean that comparison is impossible. A player’s greatness may also be assessed in terms of how they hold up against their peers. Instead of using absolute measures of a player’s performance, such as the number of runs or wickets a player makes, we may look at the relative performance of a player compared to their contemporaries. The skill of a player is therefore their distance from the average player.
+				</br></br>
+				I focus particularly on the best cricket World Cup performances of all time. The following graphics show the greatest batting and bowling performances across the generations. I scraped the scorecards of every World Cup game since the event’s inception in 1975. Each player’s rank is determined by their z-score, a measure of the distance of a data point from the mean of its distribution. A z-score score of 3 indicates that a player is 3 standard deviations above the mean. 
+				</br></br>
+				There are some notable conclusions. The batting rankings confirm Tendulkar’s brilliance: he shows up an astounding 3 times in the top 15 performances. Sri Lanka, Australia, and New Zealand are each well represented with three distinct players outscoring their peers. The same can’t be said for the bowling rankings. Australians dominate here with 4 out of 5 of the top bowling performances and an unbelievable overall 8 in the top 15.
+				</p>
 
-				<a href="/blog/2020/october.html" rel="author">
-					<div class="body-text my-4">
-						<h4 class="my-1">New York Times Top Terms <span>October 2020</span></h4>
-						<p>
-							It’s been a pretty eventful year. However, between a sordid presidential election and the relentless march of a pandemic, it’s difficult to remember everything that’s actually happened since last fall. My forgetfulness made me curious: what has occupied our minds most over the past year?
-						</p>
-					</div>
-				</a>
-
+				<div>
+					<img class= "plot-image my-4 mx-auto" src="/blog/2021/plots/january_plots/batting.png">
+					<img class= "plot-image my-4 mx-auto" src="/blog/2021/plots/january_plots/bowling.png">
+				</div>
 			</div>
 		</div>
 
@@ -108,6 +101,7 @@
 				<p id="copyright" class="link-text mx-auto">&#169; Prakrit Baruah 2020</p>
 			</div>
 		</footer>
+
 
 	</body>
 	

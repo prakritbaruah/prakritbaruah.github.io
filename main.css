@@ -28,7 +28,6 @@ ul ul{
 }
 
 .background-color {
-	/*background-color: #F7EBE8;*/
 	background-color: #1E1E24;
 }
 
@@ -222,6 +221,11 @@ ul ul{
 
 .blog-content p, ul {
 	font-size: 15px;
+}
+
+.plot-image {
+	max-width: 100%;
+	mx-height: 100%;
 }
 
 footer {
